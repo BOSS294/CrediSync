@@ -1,0 +1,154 @@
+/* Container Styling */
+.add-creditors {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    max-width: 1200px;
+    position: relative;
+    margin-left: 150px;
+}
+
+.add-creditors .creditor-details h2 {
+    color: #1de9b6;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.add-creditors .creditor-details p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Circular Button */
+.circular-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #1de9b6;
+    color: #121212;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.circular-btn:hover {
+    background-color: #14c2a1;
+    transform: scale(1.1);
+}
+
+.circular-btn span.material-icons {
+    font-size: 2rem;
+    color: #121212;
+}
+
+/* Tooltip */
+.tooltip-text {
+    display: none;
+    background-color: #1de9b6;
+    color: #121212;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.circular-btn:hover .tooltip-text {
+    display: block;
+}
+
+/* Popup Form */
+.creditor-popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    width: 400px;
+}
+
+.creditor-popup-form .form-container {
+    position: relative;
+}
+
+.creditor-popup-form h3 {
+    color: #1de9b6;
+    margin-bottom: 20px;
+}
+
+.creditor-popup-form label {
+    font-size: 1rem;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.creditor-popup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.submit-btn {
+    background-color: #1de9b6;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #14c2a1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.creditor-popup-form.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .creditor-popup-form {
+        width: 90%;
+    }
+}

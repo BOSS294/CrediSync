@@ -1,0 +1,79 @@
+.coming-soon-container {
+    max-width: 1350px;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coming-soon-container:hover {
+    transform: scale(1.05);
+}
+
+.coming-soon {
+    text-align: center;
+    color: #ffffff;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+}
+
+.animated-icon {
+    font-size: 80px;
+    color: #1de9b6;
+    animation: bounce 2s infinite;
+}
+
+.text-container h2 {
+    font-size: 1.8rem;
+    color: #1de9b6;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.text-container a.link {
+    color: #1de9b6;
+    text-decoration: none;
+}
+
+.text-container a.link:hover {
+    text-decoration: underline;
+}
+
+/* Animation for bouncing icon */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .coming-soon-container {
+        padding: 20px;
+    }
+
+    .animated-icon {
+        font-size: 60px;
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+}

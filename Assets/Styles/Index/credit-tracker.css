@@ -1,0 +1,138 @@
+/* Container Styles */
+.credit-score-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+/* Score Container */
+.score-container {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+/* Score Circle */
+.score-circle {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 50%, #1de9b6 0%, #00bfa5 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.score-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Score Value */
+.score-circle .score-value {
+    font-size: 3rem;
+    color: #121212;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Score Details */
+.score-details {
+    max-width: 600px;
+}
+
+.score-details h3 {
+    margin-top: 0;
+    color: #1de9b6;
+}
+
+.score-details p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.tips-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #1de9b6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tips-btn:hover {
+    background-color: #00bfa5;
+    transform: scale(1.05);
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #121212;
+    color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    animation: slideIn 0.3s ease-out;
+}
+
+.close-btn {
+    color: #1de9b6;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #00bfa5;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

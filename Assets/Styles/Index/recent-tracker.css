@@ -1,0 +1,52 @@
+/* General Styles */
+.recent-transaction {
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.recent-transaction h2 {
+    color: #1de9b6;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #1de9b6;
+}
+
+.transaction-table th {
+    background-color: #1de9b6;
+    color: #121212;
+}
+
+.transaction-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button Styles */
+.details-btn {
+    padding: 6px 10px;
+    background-color: #1de9b6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #00bfa5;
+    transform: scale(1.05);
+}

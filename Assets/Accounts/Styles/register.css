@@ -1,0 +1,108 @@
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.register-container {
+    background-color: #1f1f1f;
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Slightly larger border radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced box shadow */
+    max-width: 500px; /* Adjusted width for better alignment */
+    width: 100%;
+    margin: 20px; /* Added margin to prevent overlap with screen edges */
+}
+
+.register-container h2 {
+    margin-bottom: 30px; /* Increased margin for better separation */
+    color: #1de9b6;
+    font-size: 1.8rem; /* Adjusted font size for better visibility */
+    text-align: center; /* Center align heading */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input, .input-group textarea {
+    width: calc(100% - 40px); /* Adjusted width to account for icon padding */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem; /* Ensured consistent font size */
+}
+
+.input-group span.material-icons {
+    position: absolute;
+    left: 10px;
+    color: #1de9b6;
+}
+
+.input-group textarea {
+    height: 120px; /* Adjusted height for better text area sizing */
+    resize: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #1de9b6;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+}
+
+.checkbox-group a.link {
+    color: #1de9b6;
+    text-decoration: none;
+}
+
+.checkbox-group a.link:hover {
+    text-decoration: underline;
+}
+
+.register-btn {
+    background-color: #1de9b6;
+    border: none;
+    padding: 12px 24px; /* Increased padding for better button size */
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem; /* Adjusted font size for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button for better alignment */
+}
+
+.register-btn:hover {
+    background-color: #1bb198;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        padding: 20px;
+        max-width: 100%; /* Ensure container takes full width on smaller screens */
+    }
+
+    .register-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group input, .input-group textarea {
+        width: 100%; /* Full width inputs on smaller screens */
+    }
+}

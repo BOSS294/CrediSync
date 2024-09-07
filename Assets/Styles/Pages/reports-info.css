@@ -1,0 +1,105 @@
+.reports-info-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: auto;
+    margin-top: 8%;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+
+
+}
+
+.reports-info-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    max-width: 60%;
+    padding: 20px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.reports-info-card:hover {
+    transform: scale(1.05);
+}
+
+.card-header h2 {
+    color: #1de9b6;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-content .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-content .info-item span.material-icons {
+    font-size: 36px;
+    color: #1de9b6;
+    margin-right: 10px;
+}
+
+.card-content .info-item .info-text {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    background-color: #1de9b6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #14b68c;
+}
+
+.action-btn span.material-icons {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .reports-info-container {
+        flex-direction: column;
+    }
+
+    .reports-info-card {
+        max-width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .action-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

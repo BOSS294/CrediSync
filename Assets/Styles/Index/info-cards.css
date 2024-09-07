@@ -1,0 +1,81 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Info Cards Container */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10%;
+
+}
+
+/* Card Style */
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #1de9b6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border-color: #1de9b6;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #1de9b6;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.card:hover .card-icon {
+    color: #ffffff;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1de9b6;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Highlighted Important Information */
+.highlight {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1de9b6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+        margin-top: 15%;
+    }
+}

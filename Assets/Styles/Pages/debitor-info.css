@@ -1,0 +1,79 @@
+.credit-info {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1300px;
+    margin: auto;
+    margin-top:8%;
+}
+
+.credit-info h2 {
+    font-size: 2rem;
+    color: #1de9b6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #1de9b6;
+    margin-right: 15px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1de9b6;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.highlight {
+    color: #1de9b6;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .credit-info {
+        margin-top: 12%;
+
+
+    }
+}

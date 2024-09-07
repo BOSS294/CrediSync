@@ -1,0 +1,153 @@
+
+
+.login-page {
+    font-family: 'Poppins', sans-serif;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    
+    padding: 0 20px;
+}
+
+.login-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    color: #1de9b6;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group span.material-icons {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #1de9b6;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 50px;
+    border: 2px solid #1de9b6;
+    background-color: #333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #00bfa5;
+    background-color: #444;
+    outline: none;
+}
+
+.input-group span.material-icons:hover {
+    color: #00bfa5;
+}
+
+.captcha-container {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #1de9b6;
+    transition: border 0.3s, background-color 0.3s;
+    position: relative;
+}
+
+.captcha-container:hover {
+    border-color: #00bfa5;
+    background-color: #444;
+}
+
+.captcha-text {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    animation: popUp 0.5s ease;
+}
+
+button.login-btn {
+    background-color: #1de9b6;
+    color: #121212;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+button.login-btn:hover {
+    background-color: #00bfa5;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .input-group input {
+        padding: 12px 15px 12px 45px;
+    }
+
+    .input-group span.material-icons {
+        font-size: 22px;
+    }
+
+    .login-btn {
+        padding: 12px 20px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
