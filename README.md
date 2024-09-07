@@ -1,6 +1,5 @@
-# FinTrack Pro
-
-**FinTrack Pro** is a comprehensive web application designed to manage and track your financial transactions, including credits, debits, creditors, and debtors. With modern UI/UX and advanced features, it provides a seamless experience for managing your financial records.
+# CrediSync
+**CrediSync** is a comprehensive web application designed to manage and track your financial transactions, including credits, debits, creditors, and debtors. With modern UI/UX and advanced features, it provides a seamless experience for managing your financial records.
 
 ## Images
 #Home Page
